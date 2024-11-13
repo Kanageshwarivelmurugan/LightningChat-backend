@@ -7,15 +7,13 @@ const server = http.createServer(app);
 //const io = socketIo(server);
 const io = socketIo(server, {
   cors: {
-    origin: 'lightning-chat-frontend.vercel.app',
+    origin: 'http://localhost:5173/',
     methods: ['GET', 'POST']
   }
 })
 const rooms = ['Family', 'Friends', 'OfficeNest', 'Colleage'];
 
-app.use(cors({
-  otigin:"lightning-chat-frontend.vercel.app",
-}));
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 require('./connection')
