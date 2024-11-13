@@ -13,7 +13,9 @@ const io = socketIo(server, {
 })
 const rooms = ['Family', 'Friends', 'OfficeNest', 'Colleage'];
 
-app.use(cors());
+app.use(cors({
+  otigin:"lightning-chat-frontend.vercel.app",
+}));
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 require('./connection')
