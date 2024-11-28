@@ -6,14 +6,14 @@ const app = express();
 const server = http.createServer(app);
 
 const corsOptions = {
-  origin: 'https://lightning-chat-frontend-myink1d6a-kanageshwaris-projects.vercel.app', // Your frontend URL
+  origin: 'https://lightning-chat-frontend.vercel.app', // Your frontend URL
   methods: 'GET,POST,PUT,DELETE',
   allowedHeaders: 'Content-Type, Authorization'
 };
 //const io = socketIo(server);
 const io = socketIo(server, {
   cors: {
-    origin: 'https://lightning-chat-frontend-myink1d6a-kanageshwaris-projects.vercel.app',
+    origin: 'https://lightning-chat-frontend.vercel.app/',
       methods: ['GET', 'POST'],
   allowedHeaders: 'Content-Type, Authorization',
   credentials: true
