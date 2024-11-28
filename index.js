@@ -7,7 +7,7 @@ const server = http.createServer(app);
 //const io = socketIo(server);
 const io = socketIo(server, {
   cors: {
-    origin: '	https://lightning-chat-frontend-git-master-kanageshwaris-projects.vercel.app/',
+    origin: 'https://lightning-chat-frontend-myink1d6a-kanageshwaris-projects.vercel.app/',
     methods: ['GET', 'POST']
   }
 })
