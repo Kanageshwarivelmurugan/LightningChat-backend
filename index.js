@@ -13,7 +13,7 @@ const corsOptions = {
 //const io = socketIo(server);
 const io = socketIo(server, {
   cors: {
-    origin: 'https://lightning-chat-frontend-myink1d6a-kanageshwaris-projects.vercel.app/',
+    origin: 'https://lightning-chat-frontend-myink1d6a-kanageshwaris-projects.vercel.app',
       methods: ['GET', 'POST'],
   allowedHeaders: 'Content-Type, Authorization',
   credentials: true
