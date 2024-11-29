@@ -156,7 +156,7 @@ app.get('/rooms', (req, res) => {
 });
 
 app.get('/', (req, res) => {
-  res.send('Hello, world!');
+  res.send('Hello, World!');
 });
 
 const PORT = process.env.PORT || 3000;
